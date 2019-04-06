@@ -21,7 +21,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather PWA</title>
+  <title>Qwikee</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
   <!-- TODO add manifest here -->
@@ -29,7 +29,7 @@
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="apple-mobile-web-app-title" content="Qwikee">
   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
@@ -37,13 +37,17 @@
 <body>
 
   <header class="header">
-    <h1 class="header__title">Weather PWA</h1>
+    <h1 class="header__title">Qwikee</h1>
     <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
     <button id="butAdd" class="headerButton" aria-label="Add"></button>
   </header>
 
   <main class="main">
-    <div class="card cardTemplate weather-forecast" hidden>
+  <div class="card" style=" text-align: center;"><h1>  Hello World!</h1></div>
+  
+    <div class="card cardTemplate weather-forecast" hidden style="display: none">
+	
+	
       <div class="city-key" hidden></div>
       <div class="card-last-updated" hidden></div>
       <div class="location"></div>
@@ -144,22 +148,22 @@
 
   <div class="dialog-container">
     <div class="dialog">
-      <div class="dialog-title">Add new city</div>
+      <div class="dialog-title">Where to milk tea?</div>
       <div class="dialog-body">
         <select id="selectCityToAdd">
           <!-- Values map to Yahoo Weather API Where On Earth Identifiers (WOEIDs).
                https://developer.yahoo.com/weather/documentation.html#req -->
-          <option value="2357536">Austin, TX</option>
-          <option value="2367105">Boston, MA</option>
-          <option value="2379574">Chicago, IL</option>
-          <option value="2459115">New York, NY</option>
-          <option value="2475687">Portland, OR</option>
-          <option value="2487956">San Francisco, CA</option>
-          <option value="2490383">Seattle, WA</option>
+          <option value="2357536">Happy Lemon</option>
+          <option value="2367105">Gong Cha</option>
+          <option value="2379574">Serneitea</option>
+          <option value="2459115">Chowking</option>
+          <option value="2475687">Chatime</option>
+          <option value="2487956">Macao Imperial</option>
+          <option value="2490383">Cha Tuk Chak</option>
         </select>
       </div>
       <div class="dialog-buttons">
-        <button id="butAddCity" class="button">Add</button>
+        <button id="butAddCity" class="button">Okay</button>
         <button id="butAddCancel" class="button">Cancel</button>
       </div>
     </div>

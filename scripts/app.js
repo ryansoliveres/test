@@ -114,6 +114,7 @@
     }
     cardLastUpdatedElem.textContent = data.created;
 
+
     card.querySelector('.description').textContent = current.text;
     card.querySelector('.date').textContent = current.date;
     card.querySelector('.current .icon').classList.add(app.getIconClass(current.code));
